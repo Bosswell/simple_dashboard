@@ -1,0 +1,10 @@
+{% extends "@EasyAdmin/page/login.html.twig" %}
+
+{% block wrapper_wrapper %}
+    <div style="display: flex;flex-direction: column">
+        {{ parent() }}
+        <a href="{{ path('registration') }}" style="align-self: flex-end">Don't have account yet? Click to create!</a>
+    </div>
+
+
+{% endblock %}
